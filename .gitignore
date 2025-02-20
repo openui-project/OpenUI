@@ -1,0 +1,11 @@
+# Byte-compiled files
+OpenUI/obj/*
+OpenUI-Test/obj/*
+
+# Distribution / packaging
+OpenUI/bin/*
+OpenUI-Test/bin/*
+
+# Editor specific
+*~
+.vscode/
