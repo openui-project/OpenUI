@@ -5,9 +5,17 @@ name: .NET
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+     - main
+    paths-ignore:
+      - '**.md'
+      - .github/**
   pull_request:
-    branches: [ "main" ]
+    branches: 
+     - main
+    paths-ignore:
+      - '**.md'
+      - .github/**
 
 jobs:
   build:
