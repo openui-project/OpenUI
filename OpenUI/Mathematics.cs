@@ -11,7 +11,7 @@ namespace OpenUI.Mathematics {
     }
 
     /// <summary>
-    /// Defines the size of the Vector2 struct in bytes.
+    /// Defines the size of the Vector2 class in bytes.
     /// </summary>
     public static readonly int SizeInBytes = sizeof(Vector2);
 
