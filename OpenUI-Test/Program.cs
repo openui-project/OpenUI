@@ -6,6 +6,7 @@ public static class Program {
     var pos = new Vector2(0, 0);
     int VectorByteSize = Vector2.SizeInBytes;
     Console.WriteLine(VectorByteSize);
-    Console.WriteLine(pos);
+    Console.WriteLine(pos.ToString());
+    Console.WriteLine(pos.ToString(2));
   }
 }
