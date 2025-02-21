@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.InteropServices;
 
 namespace OpenUI.Mathematics {
   public unsafe class Vector2 {
@@ -9,7 +10,7 @@ namespace OpenUI.Mathematics {
       Y = y;
     }
 
-    public static readonly int SizeInBytes = sizeof(Vector2);
+    public static readonly int SizeInBytes = Marshal.SizeOf<Vector2>();
 
     public override string ToString() => $"({X}, {Y})";
   }
