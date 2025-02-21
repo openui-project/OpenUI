@@ -1,4 +1,4 @@
-using System.Runtime.CompilerServices;
+using System;
 
 namespace OpenUI.Mathematics {
   public unsafe class Vector2 {
