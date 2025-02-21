@@ -10,7 +10,7 @@ namespace OpenUI.Mathematics {
 
     public Vector2(float x, float y) {
       X = x;
-      Y = Y;
+      Y = y;
     }
 
     public override string ToString() {
