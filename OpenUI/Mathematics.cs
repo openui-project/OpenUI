@@ -9,8 +9,6 @@ namespace OpenUI.Mathematics {
       Y = y;
     }
 
-    public readonly float Length => Math.Sqrt((X * X) + (Y * Y));
-
     public static readonly int SizeInBytes = sizeof(Vector2);
 
     public override string ToString() => $"({X}, {Y})";
