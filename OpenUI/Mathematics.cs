@@ -13,5 +13,9 @@ namespace OpenUI.Mathematics {
     public static readonly int SizeInBytes = Unsafe.SizeOf<Vector2>();
 
     public override string ToString() => $"({X}, {Y})";
+
+    public override string ToString(int precision) {
+      return $"({X.ToString("F" + precision)}, {Y.ToString("F" + precision)})";
+    }
   }
 }
