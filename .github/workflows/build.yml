@@ -1,0 +1,42 @@
+name: Build .NET on Multiple Platforms
+
+on:
+  push:
+    branches:
+     - main
+    paths-ignore:
+      - '**.md'
+      - .github/**
+  pull_request:
+    branches: 
+     - main
+    paths-ignore:
+      - '**.md'
+      - .github/**
+
+jobs:
+  build:
+    name: Build on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build project
+        run: dotnet build --configuration Release --no-restore
+
+      - name: Run
+        run: dotnet run --project OpenUI-Test
+        
