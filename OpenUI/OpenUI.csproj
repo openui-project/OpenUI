@@ -10,7 +10,7 @@
   </PropertyGroup>
   
   <PropertyGroup>
-    <Title>Solara</Title>
+    <Title>OpenUI</Title>
     <Description></Description>
     <RepositoryUrl>https://github.com/openui-project/OpenUI</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
