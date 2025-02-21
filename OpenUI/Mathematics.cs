@@ -14,7 +14,7 @@ namespace OpenUI.Mathematics {
 
     public override string ToString() => $"({X}, {Y})";
 
-    public override readonly int GetHashCode() {
+    public override int GetHashCode() {
       return HashCode.Combine(X, Y);
     }
   }
